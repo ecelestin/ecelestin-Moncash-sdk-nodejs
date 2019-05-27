@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-moncash-sdk",
+  "version": "1.0.0",
+  "description": "Moncash sdk nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "moncash"
+  ],
+  "author": "esdras suy",
+  "license": "ISC"
+}
