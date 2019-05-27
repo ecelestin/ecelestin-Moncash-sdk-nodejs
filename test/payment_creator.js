@@ -1,4 +1,4 @@
-/* Copyright 2019 moncash */
+/* Copyright 2019 MonCash */
 "use strict";
 var moncash = require('../');
 require('./configure');
