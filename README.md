@@ -17,42 +17,44 @@ To write an app using the SDK
   * Add dependency 'nodejs-moncash-sdk' in your package.json file.
   * Require 'nodejs-moncash-sdk' in your file
 
-    ```node
-        var moncash = require('nodejs-moncash-sdk');
+    ```javascript
+    var moncash = require('nodejs-moncash-sdk');
     ```
+
   * Create config options, with parameters (mode, client_id, secret).
 
-    ```node 
-        moncash.configure({
-        'mode': 'sandbox', //sandbox or live
-        'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
-        'client_secret': 'BO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHBBSmha49TM'
-        });
+    ```javascript 
+    moncash.configure({
+    'mode': 'sandbox', //sandbox or live
+    'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
+    'client_secret': 'BO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHBBSmha49TM'
+    });
     ```
+
   * Invoke the rest api (eg: create a Moncash payment) with required parameters (eg: data, config_options, callback).
 
-    ```node 
-        var create_payment_json = {
-            "amount": 50,
-            "orderId": "123445564454542123"
-        };
-        
-        
-        var payment_creator = moncash.payment;
-        payment_creator.create(create_payment_json, function (error, payment) {
-            if (error) {
-                console.log(error);
-                throw error;
-            } else {
-                console.log("Create Payment Response");
-                console.log(payment_creator.redirect_uri(payment));
-            }
-        });
+    ```javascript 
+    var create_payment_json = {
+        "amount": 50,
+        "orderId": "123445564454542123"
+    };
+    
+    
+    var payment_creator = moncash.payment;
+    payment_creator.create(create_payment_json, function (error, payment) {
+        if (error) {
+            console.log(error);
+            throw error;
+        } else {
+            console.log("Create Payment Response");
+            console.log(payment_creator.redirect_uri(payment));
+        }
+    });
     ```
 
   * Capture payment using transactionId or OrderId.
 
-    ```node 
+    ```javascript 
     // Get payment by Transaction_id
     moncash.capture.getByTransactionId("1555945998145", function (error, capture) {
         if (error) {
