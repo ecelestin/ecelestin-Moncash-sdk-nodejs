@@ -39,7 +39,6 @@ To write an app using the SDK
         "orderId": "123445564454542123"
     };
     
-    
     var payment_creator = moncash.payment;
     payment_creator.create(create_payment_json, function (error, payment) {
         if (error) {
