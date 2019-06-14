@@ -1,6 +1,6 @@
 # MonCash REST SDK
 
-This is the PHP SDK that allows php's developers to interract with the MonCash payment facility on their website.
+This is the NodeJs SDK that allows nodejs developers to interract with the MonCash payment facility on their website.
 
 ## Installation
 
