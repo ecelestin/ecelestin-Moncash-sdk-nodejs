@@ -17,12 +17,12 @@ To write an app using the SDK
   * Add dependency 'nodejs-moncash-sdk' in your package.json file.
   * Require 'nodejs-moncash-sdk' in your file
 
-    ```javascript
+    ```node
         var moncash = require('nodejs-moncash-sdk');
     ```
   * Create config options, with parameters (mode, client_id, secret).
 
-    ```javascript 
+    ```node 
         moncash.configure({
         'mode': 'sandbox', //sandbox or live
         'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
@@ -31,7 +31,7 @@ To write an app using the SDK
     ```
   * Invoke the rest api (eg: create a Moncash payment) with required parameters (eg: data, config_options, callback).
 
-    ```javascript 
+    ```node 
         var create_payment_json = {
             "amount": 50,
             "orderId": "123445564454542123"
@@ -52,7 +52,7 @@ To write an app using the SDK
 
   * Capture payment using transactionId or OrderId.
 
-    ```javascript 
+    ```node 
     // Get payment by Transaction_id
     moncash.capture.getByTransactionId("1555945998145", function (error, capture) {
         if (error) {
