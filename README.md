@@ -17,23 +17,29 @@ To write an app using the SDK
   * Add dependency 'nodejs-moncash-sdk' in your package.json file.
   * Require 'nodejs-moncash-sdk' in your file
 
-    ```javascript
+
+```javascript
+
     var moncash = require('nodejs-moncash-sdk');
-    ```
+```
 
   * Create config options, with parameters (mode, client_id, secret).
 
-    ```javascript 
+
+```javascript
+
     moncash.configure({
-    'mode': 'sandbox', //sandbox or live
-    'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
-    'client_secret': 'BO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHBBSmha49TM'
+        'mode': 'sandbox', //sandbox or live
+        'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
+        'client_secret': 'BO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHBBSmha49TM'
     });
-    ```
+```
 
   * Invoke the rest api (eg: create a Moncash payment) with required parameters (eg: data, config_options, callback).
 
-    ```javascript 
+
+```javascript 
+
     var create_payment_json = {
         "amount": 50,
         "orderId": "123445564454542123"
@@ -49,11 +55,12 @@ To write an app using the SDK
             console.log(payment_creator.redirect_uri(payment));
         }
     });
-    ```
+```
 
   * Capture payment using transactionId or OrderId.
 
-    ```javascript 
+```javascript 
+
     // Get payment by Transaction_id
     moncash.capture.getByTransactionId("1555945998145", function (error, capture) {
         if (error) {
@@ -71,7 +78,7 @@ To write an app using the SDK
             console.log(capture);
         }
     });
-    ```
+```
 
   * For creating Payments, check out the [test](/test/payment_creator.js).
 
@@ -81,6 +88,9 @@ To write an app using the SDK
 
 ```sh
     node test/payment_creator.js
+```
+
+```sh
     node test/payment_capture.js
 ```
 
