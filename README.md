@@ -9,6 +9,12 @@ This is the NodeJs SDK that allows nodejs developers to interract with the MonCa
 ```sh
 npm install ./nodejs-moncash-sdk
 ```
+Or
+
+```sh
+npm install --save https://github.com/ecelestin/ecelestin-Moncash-sdk-nodejs
+```
+
 
 ## Usage
 To write an app using the SDK
