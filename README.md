@@ -4,15 +4,15 @@ This is the NodeJs SDK that allows nodejs developers to interract with the MonCa
 
 ## Installation
 
+```sh
+npm install --save https://github.com/ecelestin/ecelestin-Moncash-sdk-nodejs
+```
+Or
+
 * Download the package and execute this command line
 
 ```sh
 npm install ./nodejs-moncash-sdk
-```
-Or
-
-```sh
-npm install --save https://github.com/ecelestin/ecelestin-Moncash-sdk-nodejs
 ```
 
 
