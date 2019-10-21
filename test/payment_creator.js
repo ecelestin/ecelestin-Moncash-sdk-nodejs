@@ -5,7 +5,7 @@ require('./configure');
 
 var create_payment_json = {
     "amount": 50,
-    "orderId": "123445564454542123"
+    "transactionId": "1234423"
 };
 
 
