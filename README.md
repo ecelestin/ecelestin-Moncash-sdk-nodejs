@@ -36,8 +36,8 @@ To write an app using the SDK
 
     moncash.configure({
         'mode': 'sandbox', //sandbox or live
-        'client_id': 'BBWKjlBLKMYqRNQ6sYvFo64FtaRLRR5BdHBBSmha49TM',
-        'client_secret': 'BO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHBBSmha49TM'
+        'client_id': '<REPLACE WITH YOUR CLIENT ID>',
+        'client_secret': '<REPLACE WITH YOUR CLIENT SECRET>'
     });
 ```
 
