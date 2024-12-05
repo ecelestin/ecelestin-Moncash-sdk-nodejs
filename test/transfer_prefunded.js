@@ -12,12 +12,12 @@ var data_json = {
 
 
 var transfer = moncash.transfer;
-transfer.process(data_json, function (error, payment) {
+transfer.process(data_json, function (error, res) {
     if (error) {
         console.log(error);
         throw error;
     } else {
         console.log("Create Payment Response");
-        console.log(payment_creator.redirect_uri(payment));
+        console.log(res);
     }
 });
