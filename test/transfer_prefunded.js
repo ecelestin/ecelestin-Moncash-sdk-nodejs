@@ -5,7 +5,7 @@ require('./configure');
 
 var data_json = {
     "amount": 50,
-    "receiver": "50938662809",
+    "receiver": "<Phone number>",
     "desc": "Test",
     "reference": Math.random().toString(16).slice(2)
 };
